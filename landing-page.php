@@ -14,5 +14,19 @@
 </head>
 <body>
     <?php include 'nav-bar.php'; ?>
+    <section class="title">
+        <div class="title-text">
+            <h1>
+                Association <span class="small-text">for</span>
+            </h1>
+            <h1>
+                International Students
+            </h1>
+        </div>
+        <div class="logo">
+            <img class="logo" src="img-resources/AIS-logo.png" alt="AIS logo">
+        </div>
+
+    </section>
 </body>
 </html>
