@@ -6,7 +6,7 @@
 }
 
 
-.inter-ais> {
+.inter-ais {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-weight: 200;
@@ -17,10 +17,16 @@ body{
     font-family: "Inter", sans-serif;
 }
 
+
+/*[NAVIGATION BAR FOR AIS WEBSITE]*/
 .nav-bar{
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100vw;
     height: 80px;
     border-bottom: 1px solid black;
+    background-color: white;
 }
 
 nav{
@@ -69,3 +75,49 @@ nav{
     transform: translateY(-2px); 
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   }
+
+/*[NAVIGATION BAR FOR AIS WEBSITE]*/
+
+.title{
+    margin-top: 80px;
+    width: 100vw;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.title::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 250px;
+    
+    background-image: url(img-resources/sfc-campus.png);
+    background-size: cover;
+    opacity: 0.5;
+    mask-image: linear-gradient(to bottom, black, transparent);
+    -webkit-mask-image: linear-gradient(to bottom, black, transparent);    
+    z-index: -1; 
+}
+
+.title-text {
+    font-size: 1.3rem;
+    color: #3B5B6E;
+    margin-right: 25px;
+}
+
+.small-text{
+    font-weight: lighter;
+    font-size: 1.3rem;
+}
+
+.logo{
+    height: 125px;
+    width: 125px;
+    margin-left: 25px;
+}
