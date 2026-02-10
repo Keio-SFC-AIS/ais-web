@@ -28,5 +28,39 @@
         </div>
 
     </section>
+
+    <section class="who-we-are">
+        <div class="intro-description">
+            <h1>Who <span class="we">We</span> Are</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet quos dolore omnis explicabo facilis itaque ut quaerat cumque illum error a, natus accusamus consectetur velit rerum maiores ratione assumenda expedita! Adipisci dolor quia eum ipsum exercitationem quos dicta a aperiam! Nisi, veritatis animi nam officia nulla aliquam eos velit obcaecati sapiente nobis cupiditate quo debitis sit vero hic saepe excepturi eveniet expedita voluptatibus! Magni, sequi. Velit quia rerum ratione tenetur obcaecati magnam ad reiciendis quas.</p>
+        </div>
+        <div class="scroll-window">
+            <div class="scroll-wrapper">
+                
+                <div class="column col-1">
+                    <div class="img-1"></div>
+                    <div class="img-1"></div>
+                    <div class="img-1"></div>
+                    <div class="img-1"></div>
+                </div>
+
+                <div class="column col-2">
+                    <div class="img-1"></div>
+                    <div class="img-1"></div>
+                    <div class="img-1"></div>
+                    <div class="img-1"></div>
+                </div>
+
+                <div class="column col-3">
+                    <div class="img-1"></div>
+                    <div class="img-1"></div>
+                    <div class="img-1"></div>
+                    <div class="img-1"></div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
 </body>
 </html>
