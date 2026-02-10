@@ -76,7 +76,7 @@ nav{
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   }
 
-/*[NAVIGATION BAR FOR AIS WEBSITE]*/
+/*[TITLE SECTION]*/
 
 .title{
     margin-top: 80px;
@@ -120,4 +120,76 @@ nav{
     height: 125px;
     width: 125px;
     margin-left: 25px;
+}
+
+/*[INTRODUCTION SECTION]*/
+.who-we-are{
+    width: 100vw;
+    height: 250px;
+    display: flex;
+    
+}
+
+.intro-description{
+    width: 50%;
+    padding: 83px;
+}
+
+.intro-description h1{
+    font-weight: normal;
+    font-size: 2.0rem;
+    margin-bottom: 1.5rem;
+}
+
+.we{
+    font-weight: bold;
+}
+
+.scroll-wrapper {
+    display: flex; 
+    gap: 20px;
+    height: 100%;
+    align-items: start; 
+}
+
+.column {
+    display: flex;
+    flex-direction: column; 
+    gap: 20px; 
+    width: 33.33%; 
+    
+    
+    animation: scrollUp 20s linear infinite;
+}
+
+
+.col-2 {
+    margin-top: 75px; 
+}
+
+.col-3 {
+    margin-top: 35px; 
+}
+
+@keyframes scrollUp {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-50%); }
+}
+
+.img-1 {
+    width: 150px;
+    height: 320px;
+    background-color: gray;
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+    flex-shrink: 0; 
+}
+
+.scroll-window {
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 10%, black 90%, transparent 100%);
+    mask-image: linear-gradient(to bottom, transparent 0%, black 10%, black 90%, transparent 100%);
 }
