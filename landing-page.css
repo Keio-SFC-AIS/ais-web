@@ -125,9 +125,9 @@ nav{
 /*[INTRODUCTION SECTION]*/
 .who-we-are{
     width: 100vw;
-    height: 250px;
+    height: 400px;
     display: flex;
-    
+    justify-content: center;
 }
 
 .intro-description{
@@ -135,7 +135,7 @@ nav{
     padding: 83px;
 }
 
-.intro-description h1{
+h1{
     font-weight: normal;
     font-size: 2.0rem;
     margin-bottom: 1.5rem;
@@ -192,4 +192,135 @@ nav{
     position: relative;
     -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 10%, black 90%, transparent 100%);
     mask-image: linear-gradient(to bottom, transparent 0%, black 10%, black 90%, transparent 100%);
+    z-index: -3;
+}
+
+/*[ROLE EXPLANATION SECTION]*/
+.how-we-operate {
+    height: 500px;
+    width: 100vw;
+    margin-top: 80px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.division-carousel {
+    position: relative;
+    width: 100vw;
+    height: 400px;
+    margin: 0 auto;
+}
+
+.division-item {
+    list-style-type: none;
+    background-color: gray;
+    border: 1px solid #dddddd;
+    border-radius: 20px;
+    width: 450px;
+    height: 350px;
+    padding: 20px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -225px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.division-item.active {
+    transform: translateX(0) scale(1);
+    opacity: 1;
+    z-index: 2;
+}
+
+.division-item.prev {
+    transform: translateX(-70%) scale(0.85);
+    opacity: 0.6;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.division-item.next {
+    transform: translateX(70%) scale(0.85);
+    opacity: 0.6;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.card-content {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    right: 15px;
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    text-align: left;
+    transition: all 0.4s ease;
+}
+
+.card-content h2 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.card-content h3 {
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+.view-more {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+
+.view-more p {
+    font-size: 0.8rem;
+    margin-bottom: 15px;
+}
+
+.division-item.active .view-more {
+    max-height: 200px;
+    opacity: 1;
+}
+
+.view-more-btn {
+    display: inline-block;
+    float: right;
+    background-color: #3B5B6E;
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    background-color: #e0e0e0;
+    padding: 8px 16px;
+    border-radius: 20px;
+    width: fit-content;
+    margin: 0 auto 0 auto;
+    margin-bottom: 30px;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.dot.active {
+    background-color: black;
 }
