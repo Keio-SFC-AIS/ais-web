@@ -31,19 +31,22 @@ body{
 
 nav{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     height: 80px;
 }
 
 .nav-bar .nav-list{
     display: flex;
-    width: 60%;
-    justify-content: space-evenly;
+    width: 30%;
+    height: 1rem;
 }
 
 .nav-list li{
     list-style: none;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 0;
 }
 
 .nav-list a{
@@ -56,6 +59,7 @@ nav{
 .nav-list a:hover{
     text-decoration: underline;
 }
+
 .contact-us-btn{
     display: inline-block;
     font-weight: bold;
@@ -66,7 +70,7 @@ nav{
     text-decoration: none;
     border-radius: 20px ;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-
+    margin-right: 50px;
     transition: all 0.3s ease;
 }
 
@@ -74,8 +78,13 @@ nav{
     background-color: #293f4b;
     transform: translateY(-2px); 
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  }
+}
 
+.nav-link-img{
+    width: 60px;
+    height:100%;
+    margin-left: 50px;
+}
 /*[TITLE SECTION]*/
 
 .title{
@@ -98,7 +107,8 @@ nav{
     height: 250px;
     
     background-image: url(img-resources/sfc-campus.png);
-    background-size: cover;
+    background-size: auto;
+    background-position-y: -50px;
     opacity: 0.5;
     mask-image: linear-gradient(to bottom, black, transparent);
     -webkit-mask-image: linear-gradient(to bottom, black, transparent);    
@@ -143,6 +153,11 @@ h1{
 
 .we{
     font-weight: bold;
+}
+
+.title-text h1{
+    font-weight: bold;
+    margin-bottom: -5px;
 }
 
 .scroll-wrapper {

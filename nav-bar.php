@@ -1,5 +1,8 @@
 <header class="nav-bar">
     <nav>
+        <a href="">
+            <img class="nav-link-img" src="img-resources/AIS-logo.png" alt="">
+        </a>
         <ul class="nav-list">
             <li><a href="about.php">About Us</a></li>
             <li><a href="news.php">News & Events</a></li>
