@@ -80,7 +80,7 @@ nav{
 
 .title{
     margin-top: 80px;
-    width: 100vw;
+    /* width: 100vw; */
     height: 250px;
     display: flex;
     justify-content: center;
@@ -94,7 +94,7 @@ nav{
     position: absolute;
     top: 0;
     left: 0;
-    width: 100vw;
+    /* width: 100vw; */
     height: 250px;
     
     background-image: url(img-resources/sfc-campus.png);
@@ -124,7 +124,7 @@ nav{
 
 /*[INTRODUCTION SECTION]*/
 .who-we-are{
-    width: 100vw;
+    /* width: 100vw; */
     height: 400px;
     display: flex;
     justify-content: center;
@@ -198,7 +198,7 @@ h1{
 /*[ROLE EXPLANATION SECTION]*/
 .how-we-operate {
     height: 500px;
-    width: 100vw;
+    /* width: 100vw; */
     margin-top: 80px;
     text-align: center;
     overflow: hidden;
@@ -206,7 +206,7 @@ h1{
 
 .division-carousel {
     position: relative;
-    width: 100vw;
+    /* width: 100vw; */
     height: 400px;
     margin: 0 auto;
 }
