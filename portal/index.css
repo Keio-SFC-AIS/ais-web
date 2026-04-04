@@ -1,0 +1,252 @@
+/* Global Var */
+:root {
+    /* AIS Blue */
+    --brand-blue: #3b82f6;
+    --brand-dark: #1e3a8a;
+    --bg-color: #f4f7f9;
+    --card-bg: #ffffff;
+    /* Main Text */
+    --text-main: #1e293b;
+    /* Subt Text */
+    --text-sub: #64748b;
+    --border-light: #e2e8f0;
+    --radius-lg: 1.25rem;
+    --radius-md: 1rem;
+    /* Animation */
+    --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: var(--bg-color);
+    background-image: radial-gradient(circle at 0% 0%, rgba(59, 130, 246, 0.12) 0%, transparent 50%);
+    background-attachment: fixed;
+    color: var(--text-main);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 3rem 1.5rem;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Layout */
+.portal-wrapper {
+    width: 100%;
+    max-width: 640px;
+    display: flex;
+    flex-direction: column;
+    /* Gap between all cards */
+    gap: 1.25rem;
+}
+
+/* Card Design */
+.profile-card {
+    background: var(--card-bg);
+    border-radius: var(--radius-lg);
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05);
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 0.5rem;
+}
+
+/* Card Left Boarder Design */
+.profile-card::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 6px;
+    background: var(--brand-blue);
+}
+
+.avatar-container {
+    flex-shrink: 0;
+}
+
+.avatar-container img {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #eff6ff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.profile-info {
+    flex: 1;
+}
+
+.profile-info h1 {
+    font-size: 1.4rem;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    margin-bottom: 0.3rem;
+}
+
+.profile-info p {
+    font-size: 0.9rem;
+    color: var(--text-sub);
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+/* SNS below the text */
+.social-row {
+    display: flex;
+    gap: 0.75rem;
+}
+
+.social-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    background: #f1f5f9;
+    color: var(--text-sub);
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: var(--transition);
+}
+
+.social-btn:hover {
+    background: var(--brand-blue);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(59, 130, 246, 0.3);
+}
+
+/* Universal Link Cards */
+.link-card {
+    display: flex;
+    align-items: center;
+    padding: 1.25rem 1.5rem;
+    background: var(--card-bg);
+    border-radius: var(--radius-md);
+    text-decoration: none;
+    color: var(--text-main);
+    transition: var(--transition);
+    border: 1px solid rgba(255, 255, 255, 0.5); 
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02);
+}
+
+.link-card:hover {
+    transform: translateY(-3px) scale(1.01);
+    box-shadow: 0 12px 20px -5px rgba(0, 0, 0, 0.08);
+    border-color: var(--border-light);
+}
+
+/* Icons */
+.icon-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    background: #eff6ff;
+    color: var(--brand-blue);
+    border-radius: 0.75rem;
+    font-size: 1.25rem;
+    margin-right: 1.25rem;
+    transition: var(--transition);
+}
+
+.link-card:hover .icon-box {
+    background: var(--brand-blue);
+    color: white;
+}
+
+/* Text */
+.text-box {
+    flex: 1;
+}
+
+.text-box h3 {
+    font-size: 1.05rem;
+    font-weight: 600;
+    margin-bottom: 0.15rem;
+}
+
+.text-box p {
+    font-size: 0.8rem;
+    color: var(--text-sub);
+}
+
+/* Right Arrow in the universal card */
+.arrow-icon {
+    color: #cbd5e1;
+    transition: var(--transition);
+}
+
+.link-card:hover .arrow-icon {
+    color: var(--brand-blue);
+    transform: translateX(4px);
+}
+
+/* Special Cards (hero) */
+.link-card.hero-link {
+    background: linear-gradient(135deg, var(--brand-blue), var(--brand-dark));
+    color: white;
+    box-shadow: 0 8px 15px rgba(37, 99, 235, 0.2);
+}
+
+.link-card.hero-link:hover {
+    box-shadow: 0 15px 25px rgba(37, 99, 235, 0.35);
+}
+
+.link-card.hero-link .icon-box {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+.link-card.hero-link p {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.link-card.hero-link .arrow-icon {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Responsibe Design */
+@media (max-width: 480px) {
+    .profile-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 2rem 1.5rem;
+        gap: 1rem;
+    }
+    .profile-card::before {
+        width: 100%;
+        height: 4px;
+        bottom: auto;
+    }
+    .social-row {
+        justify-content: center;
+    }
+}
+
+/* Special Card Annimation */
+
+@keyframes pulse-glow {
+    0% { box-shadow: 0 0 0 0 rgba(59, 130, 246, 0.4); }
+    70% { box-shadow: 0 0 0 10px rgba(59, 130, 246, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(59, 130, 246, 0); }
+}
+.freshman-card {
+    border: 2px solid var(--brand-blue) !important;
+    animation: pulse-glow 2s infinite;
+}
