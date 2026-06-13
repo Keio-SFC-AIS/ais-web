@@ -1,10 +1,9 @@
 <section id="organization-goals" class="organization-goals page-section">
     <div class="goals-header-text">
         <h1>
-            About <span id="ais-text">AIS</span>
+            Our <span id="ais-text">Goal</span>
         </h1>
-        <h3>Our Goals</h3>
-        <p>Bridging the gap between GIGA & Non-GIGA students through <span>A.I.S</span></p>
+        <p>"Bridging the gap between GIGA & Non-GIGA students through <span><b>A.I.S</b></span>"</p>
     </div>
 
 

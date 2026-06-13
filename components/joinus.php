@@ -7,8 +7,8 @@
                 <p class="bottom">Help us build the bridge between the international and Japanese community</p>
             </div>
             <div class="btn-field">
-                <a class="contact-us" href="">Contact us!</a>
-                <a class="dashboard" href="">Dashboard</a>
+                <a class="contact-us" href="/apply/">Join us!</a>
+                <a class="dashboard" href="/about">Learn More</a>
             </div>
             
         </div>
