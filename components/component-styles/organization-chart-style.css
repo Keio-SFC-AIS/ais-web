@@ -27,7 +27,6 @@
 }
 
 .tree {
-    max-width: 100%;
     transform: scale(0.9);
     transform-origin: top center;
 }
