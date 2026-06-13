@@ -1,4 +1,3 @@
-<link rel="stylesheet" href="../components/component-styles/joinus-styles.css">
 <section class="footer-final page-section">
     <div class="joinus">
         <div class="joinus-container">
@@ -15,17 +14,4 @@
         </div>
 
     </div>
-
-    <footer class="footer">
-        <div class="footer-container">
-            <img class="ais-logo-footer" src="../img-resources/AIS-logo.png" alt="ais logo">
-            <div class="footer-selection">
-                <a class="footer-link" href="">About Us</a>
-                <a class="footer-link" href="">Dashboard</a>
-                <a class="footer-link" href="">AIS portal</a>
-            </div>
-        </div>
-        <div class="borderline"></div>
-        <p class="copyright">©AIS 2026. All Rights Reserved</p>
-</footer>
 </section>

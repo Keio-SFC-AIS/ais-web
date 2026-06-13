@@ -1,5 +1,3 @@
-<link rel="stylesheet" href="../components/component-styles/org-goals-style.css">
-
 <section id="organization-goals" class="organization-goals page-section">
     <div class="goals-header-text">
         <h1>
@@ -12,9 +10,9 @@
 
     <div class="main-goals">
         <div class="goal">
-            <div class="acronym">
+                <div class="acronym">
                 <h2>A.</h2>
-                <img src="../img-resources/interaction.jpg" alt="student interaction">
+                <img src="img-resources/interaction.jpg" alt="student interaction">
             </div>
             
             <p>Advocating student engagement and connection.</p>
@@ -22,14 +20,14 @@
         <div class="goal">
             <div class="acronym">
                 <h2>I.</h2>
-                <img src="../img-resources/international.jpg" alt="student interaction">
+                <img src="img-resources/international.jpg" alt="student interaction">
             </div>
             <p>Integrating international students into a broader community.</p>
         </div>
         <div class="goal">
-            <div class="acronym">
+                <div class="acronym">
                 <h2>S.</h2>
-                <img src="../img-resources/collaboration.jpg" alt="student interaction">
+                <img src="img-resources/collaboration.jpg" alt="student interaction">
             </div>
             <p>Supporting student voices and shared experiences</p>
         </div>

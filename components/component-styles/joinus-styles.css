@@ -1,9 +1,10 @@
 .footer-final {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     padding: 50px 0 25px 0;
+    height: auto;
 }
 
 .joinus{
@@ -149,4 +150,10 @@
     margin-top: 20px;
     color: black;
     text-align: center;
+}
+
+/* Footer section styling */
+.footer {
+    min-height: 300px;
+    scroll-snap-align: start;
 }
