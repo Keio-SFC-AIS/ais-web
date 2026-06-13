@@ -15,6 +15,7 @@
         <?php include '../components/landing.php'; ?>
         <?php include '../components/org-goals.php'; ?>
         <?php include '../components/organization-chart.php'; ?>
+        <?php include '../components/joinus.php'; ?>
     </main>
     
 </body>
