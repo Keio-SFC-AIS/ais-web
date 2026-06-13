@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="../components/component-styles/org-goals-style.css">
 
-<section class="organization-goals">
-    <div class="header-text">
+<section id="organization-goals" class="organization-goals page-section">
+    <div class="goals-header-text">
         <h1>
             About <span id="ais-text">AIS</span>
         </h1>

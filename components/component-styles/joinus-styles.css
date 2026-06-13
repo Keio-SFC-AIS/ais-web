@@ -1,0 +1,152 @@
+.footer-final {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0 25px 0;
+}
+
+.joinus{
+    width: 100%;
+    height: 300px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+.joinus-container{
+    width: 80%;
+    background: linear-gradient(to right, rgb(60, 73, 254), rgb(1, 35, 121));
+    padding: 30px 50px 50px 70px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.join-ais-text {
+    width: 45%;
+}
+
+.join-ais-text .top{
+    color: rgb(176, 238, 255);
+}
+
+.join-ais-text h1{
+    color: white;
+    font-weight: bolder;
+}
+
+.join-ais-text .bottom{
+    color: rgb(203, 208, 255);
+}
+
+.btn-field{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+.contact-us{
+    height: 30px;
+    color: white;
+    background-color: rgb(72, 140, 183);
+    padding: 30px;
+    border-radius: 15px;
+    text-decoration: none;
+    font-size: larger;
+    width:200px;
+    margin: 10px;
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    transition: transform 0.2s ease;
+}
+
+.contact-us:hover{
+    transform: scale(1.05);
+}
+
+.dashboard{
+    height: 30px;
+    color: white;
+    background-color: none;
+    border: 1px solid white;
+    padding: 30px;
+    border-radius: 15px;
+    text-decoration: none;
+    font-size: larger;
+    width:200px;
+    margin: 10px;
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    transition: transform 0.4s ease;
+    transition: background-color 0.4s ease;
+    transition: color 0.4s ease;
+}
+
+.dashboard:hover{
+    transform: scale(1.05);
+    background-color: white;
+    color: black;
+}
+
+
+/* FOOTER */
+.footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.footer-container {
+    width: 100%;
+    height: 200px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.ais-logo-footer {
+    height: 80px;
+    width: 80px;
+}
+
+.footer-selection {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+.footer-link{
+    text-decoration: none;
+    color: black;
+}
+
+.borderline{
+    width: 80%;
+    height: 1px;
+    background-color: gray;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.copyright{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: 20px;
+    color: black;
+    text-align: center;
+}

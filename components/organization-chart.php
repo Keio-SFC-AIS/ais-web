@@ -1,5 +1,8 @@
-<link rel="stylesheet" href="component-styles/organization-chart-style.css">
-<header class="nav-bar">
+<section class="organization-chart page-section">
+    <div class="org-chart-header-text">
+        <h1>Our Structure</h1>
+        <h3>How our organization is structured</h3>
+    </div>
     <div class="tree">
         <ul>
             <li>
@@ -76,4 +79,4 @@
 
         </ul>
     </div>
-</header>
+</section>
