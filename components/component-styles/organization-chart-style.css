@@ -3,10 +3,38 @@
     padding: 0;
 
 }
-  
+
+
+.organization-chart {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.org-chart-header-text h1{
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.org-chart-header-text h3{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.tree {
+    max-width: 100%;
+    transform: scale(0.9);
+    transform-origin: top center;
+}
+
 .tree ul {
     position: relative;
-        padding: 2em 0; 
+    padding: 2em 0; 
     white-space: nowrap;
     margin: 0 auto;
     text-align: center;
@@ -132,4 +160,15 @@ p{
 
 #text-content p{
     font-size: medium;
+}
+
+@media (max-width: 900px) {
+    .tree {
+        transform: scale(0.7);
+        transform-origin: top center;
+    }
+
+    .organization-block {
+        width: 240px;
+    }
 }
