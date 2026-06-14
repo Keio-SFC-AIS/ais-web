@@ -5,5 +5,8 @@
         <a href="#organization-goals">Explore more</a>
     </div>
     
-    <img class="campus" src="img-resources/sfc.png" alt="sfc campus">
+    <div class="header-image">
+        <img class="campus" src="img-resources/sfc.png" alt="sfc campus">
+    </div>
+    
 </section>

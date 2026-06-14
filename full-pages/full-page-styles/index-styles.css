@@ -24,3 +24,15 @@ body {
     scroll-snap-align: start;
     scroll-snap-stop: always;
 }
+
+/* Dark Mode */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #2d2d2d;
+        color: #ffffff;
+    }
+
+    .page-section {
+        background-color: #2d2d2d;
+    }
+}

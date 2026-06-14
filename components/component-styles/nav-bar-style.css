@@ -33,7 +33,7 @@
 
 .nav-list li a{
     font-size: 1.2rem;
-    text-decoration: none;
+    text-decoration: none!important;
     padding: 10px 15px; 
     display: block;
     border-radius: 10px;
@@ -62,4 +62,20 @@
 
 .contact-us-btn:hover{
     transform: scale(1.05);
+}
+
+/* Dark Mode */
+@media (prefers-color-scheme: dark) {
+    .nav-bar nav {
+        background-color: #222222;
+    }
+
+    .nav-list li a {
+        color: #ffffff;
+        background-color: #222222;
+    }
+
+    .nav-list li a:hover {
+        background-color: #2d2d2d;
+    }
 }

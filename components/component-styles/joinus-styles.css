@@ -17,6 +17,7 @@
 
 .joinus-container{
     width: 80%;
+    max-width: 960px;
     background: linear-gradient(to right, rgb(60, 73, 254), rgb(1, 35, 121));
     padding: 30px 50px 50px 70px;
     border-radius: 20px;
@@ -32,15 +33,18 @@
 
 .join-ais-text .top{
     color: rgb(176, 238, 255);
+    margin: 10px 0;
 }
 
 .join-ais-text h1{
     color: white;
     font-weight: bolder;
+    margin: 10px 0;
 }
 
 .join-ais-text .bottom{
     color: rgb(203, 208, 255);
+    margin-top: 20px;
 }
 
 .btn-field{
@@ -156,4 +160,28 @@
 .footer {
     min-height: 300px;
     scroll-snap-align: start;
+}
+
+/* Dark Mode */
+@media (prefers-color-scheme: dark) {
+    .footer {
+        background-color: #2d2d2d;
+        color: #ffffff;
+    }
+
+    .footer-link {
+        color: #ffffff;
+    }
+
+    .copyright {
+        color: #ffffff;
+    }
+
+    .joinus-container {
+        background: linear-gradient(to right, rgb(9, 13, 69), rgb(0, 13, 46));
+    }
+
+    .contact-us {
+        background-color: rgb(72, 120, 148);
+    }
 }

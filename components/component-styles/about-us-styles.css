@@ -1,0 +1,142 @@
+.what-we-do {
+    max-width: 100%;
+    min-height: 600px;
+    padding: 20px;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.section-header-text {
+    width: 100%;
+    max-width: 960px; 
+    margin: 0 auto; 
+    padding-left: 10px; 
+    box-sizing: border-box;
+    text-align: left; 
+}
+
+.section-header-text h1 {
+    margin-bottom: 10px;
+    margin-top: 20px;
+    text-align: left;
+    font-size: 3.5rem;
+}
+
+.section-header-text h3 {
+    margin-top: 10px;
+    text-align: left;
+}
+
+.section-header-text p {
+    margin-top: 20px;
+    text-align: left;
+    font-size: 2.2rem;
+}
+
+/* --- Card Container --- */
+.pillars-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex-wrap: wrap; 
+    gap: 20px; 
+    margin-top: 40px; 
+}
+
+.pillar-card {
+    width: 300px;
+    height: 420px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    margin: 0 10px 10px 10px;
+    padding: 0;
+    overflow-wrap: break-word;
+    overflow: hidden;
+}
+
+.pillar-image {
+    width: 100%;
+    height: 45%;
+    background-color: #f0f0f0;
+    overflow: hidden;
+}
+
+.pillar-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.pillar-card:hover .pillar-image img {
+    transform: scale(1.05);
+}
+
+.pillar-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.pillar-content h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.pillar-content p {
+    color: gray;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.pillar-btn {
+    margin-top: auto;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(72, 140, 183);
+    color: white;
+    text-decoration: none;
+    padding: 10px 25px;
+    border-radius: 15px;
+    font-weight: bold;
+    transition: transform 0.2s ease;
+    align-self: flex-start;
+}
+
+.pillar-btn:hover {
+    transform: scale(1.05);
+}
+
+@media (prefers-color-scheme: dark) {
+    .pillar-card {
+        background-color: #2d2d2d; 
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); 
+    }
+
+    .pillar-content h2 {
+        color: #ffffff; 
+    }
+
+    .pillar-content p {
+        color: #d1d1d1; 
+    }
+
+    .pillar-btn {
+        background-color: rgb(72, 120, 148); 
+    }
+}

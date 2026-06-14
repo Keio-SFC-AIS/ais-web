@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting | AIS Keio SFC</title>
+
+    <meta http-equiv="refresh" content="2;url=https://todo.tianyibrad.com/spaces/issues/d9499f788afd469d957dc24844ce43d9">
+
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f8fafc;
+            color: #1e293b;
+            text-align: center;
+        }
+
+        /* Loading animation */
+        .spinner {
+            width: 48px;
+            height: 48px;
+            border: 4px solid #e2e8f0;
+            border-top: 4px solid #3b82f6; /* AIS 核心蓝 */
+            border-radius: 50%;
+            animation: spin 1s cubic-bezier(0.55, 0.15, 0.45, 0.85) infinite;
+            margin-bottom: 24px;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .message {
+            font-size: 1.25rem;
+            font-weight: 700;
+            letter-spacing: -0.01em;
+            color: #0f172a;
+        }
+
+        .sub-message {
+            font-size: 0.9rem;
+            color: #64748b;
+            margin-top: 8px;
+        }
+
+        .footer {
+            position: absolute;
+            bottom: 2rem;
+            font-size: 0.75rem;
+            color: #94a3b8;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="spinner"></div>
+    <div class="message">Redirecting to AIS Application Page...</div>
+    <div class="sub-message">Redirecting to Google Form</div>
+
+    <div class="footer">
+        Powered by AIS Exec Team
+    </div>
+
+    <script>
+        // Delay 1.5 seconds before redirecting to ensure the message is seen
+        setTimeout(function() {
+            window.location.replace("https://docs.google.com/forms/d/e/1FAIpQLSehx_LHoOB_LeDtqmvhk5FI2f5jvSeHtotGVXAy3Cw7ofy6_w/viewform");
+        }, 1500);
+    </script>
+
+</body>
+</html>
