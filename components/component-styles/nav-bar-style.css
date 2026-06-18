@@ -16,6 +16,54 @@
     background-color: white;
 }
 
+.nav-toggle {
+    display: none;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    padding: 10px;
+    margin-left: 10px;
+}
+
+.nav-toggle-icon,
+.nav-toggle-icon::before,
+.nav-toggle-icon::after {
+    display: block;
+    width: 24px;
+    height: 3px;
+    background-color: #111;
+    border-radius: 2px;
+    position: relative;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.nav-toggle-icon::before,
+.nav-toggle-icon::after {
+    content: '';
+    position: absolute;
+    left: 0;
+}
+
+.nav-toggle-icon::before {
+    top: -8px;
+}
+
+.nav-toggle-icon::after {
+    top: 8px;
+}
+
+.nav-bar.nav-open .nav-toggle-icon {
+    background-color: transparent;
+}
+
+.nav-bar.nav-open .nav-toggle-icon::before {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.nav-bar.nav-open .nav-toggle-icon::after {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
 #ais-logo{
     width: 70px;
     height: 70px;
@@ -29,10 +77,16 @@
     gap: 30px;
     margin: 0;
     padding: 0;
+    align-items: center;
+}
+
+.nav-list li {
+    display: flex;
+    align-items: center;
 }
 
 .nav-list li a{
-    font-size: 1.2rem;
+    font-size: 18px;
     text-decoration: none!important;
     padding: 10px 15px; 
     display: block;
@@ -46,8 +100,12 @@
     background-color:  rgb(234, 234, 234);
 }
 
+.nav-list li:last-child {
+    margin-left: auto;
+}
+
 .contact-us-btn{
-    font-size: 1.2rem;
+    font-size: 18px;
     font-weight: bold;
     text-decoration: none;
     color: white;
@@ -62,6 +120,76 @@
 
 .contact-us-btn:hover{
     transform: scale(1.05);
+}
+
+.nav-list li .contact-us-btn {
+    display: inline-block;
+    padding: 12px 25px;
+    text-align: center;
+    border-radius: 30px;
+    color: white;
+    background: linear-gradient(to right, rgb(60, 73, 254), rgb(1, 35, 121));
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none !important;
+    transition: transform 0.2s ease;
+}
+
+.nav-list li .contact-us-btn:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 900px) {
+    .nav-toggle {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nav-list {
+        position: fixed;
+        top: 80px;
+        right: -100%;
+        width: 280px;
+        max-width: 85%;
+        height: calc(100vh - 80px);
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 0;
+        background-color: white;
+        padding: 20px;
+        transition: right 0.35s ease;
+        border-left: 1px solid rgba(0, 0, 0, 0.08);
+        box-shadow: -8px 0 24px rgba(0, 0, 0, 0.12);
+        z-index: 999;
+    }
+
+    .nav-list li {
+        width: 100%;
+        display: block;
+    }
+
+    .nav-list li:last-child {
+        margin-left: 0;
+    }
+
+    .nav-list li a {
+        width: 100%;
+        padding: 14px 18px;
+    }
+
+    .nav-list li .contact-us-btn {
+        display: block;
+        width: 100%;
+        padding: 14px 18px;
+        border-radius: 8px;
+        margin-top: 10px;
+    }
+
+    .nav-bar.nav-open .nav-list {
+        right: 0;
+    }
 }
 
 /* Dark Mode */
