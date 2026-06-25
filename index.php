@@ -20,7 +20,7 @@ require_once __DIR__ . '/components/nav-bar.php';
                 <a class="footer-link" href="/portal/">AIS portal</a>
             </div>
         </div>
-        <div class="borderline"></div>
+        <!-- <div class="borderline"></div> -->
         <p class="copyright">©AIS 2026. All Rights Reserved</p>
     </footer>
 </main>

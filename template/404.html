@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 | AIS Keio SFC</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" id="favicon" type="image/png" href="logo.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #f8f9fa;
+            --text-color: #212529;
+            --primary-color: #003366;
+            --muted-color: #6c757d;
+            --card-bg: #ffffff;
+            --border-color: rgba(0, 51, 102, 0.12);
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html, body {
+            margin: 0;
+            min-height: 100%;
+            font-family: 'Noto Sans SC', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 24px;
+        }
+
+        .page-wrapper {
+            width: 100%;
+            max-width: 720px;
+            padding: 32px;
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 24px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+            animation: floatIn 0.9s ease-out both;
+        }
+
+        @keyframes floatIn {
+            from {
+                opacity: 0;
+                transform: translateY(24px) scale(0.99);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+        }
+
+        .status-code {
+            font-size: clamp(4rem, 10vw, 6rem);
+            font-weight: 800;
+            margin: 0;
+            letter-spacing: -0.05em;
+            color: var(--primary-color);
+        }
+
+        .headline {
+            margin: 0 0 18px;
+            font-size: clamp(1.8rem, 4vw, 2.5rem);
+            line-height: 1.1;
+        }
+
+        .description {
+            margin: 0 0 28px;
+            color: var(--muted-color);
+            font-size: 1rem;
+            line-height: 1.8;
+        }
+
+        .actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .action-link,
+        .action-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 160px;
+            padding: 14px 20px;
+            border-radius: 999px;
+            border: 1px solid transparent;
+            text-decoration: none;
+            font-weight: 700;
+            transition: transform 0.22s ease, box-shadow 0.22s ease, background-color 0.22s ease, border-color 0.22s ease;
+        }
+
+        .action-link {
+            color: #ffffff;
+            background-color: var(--primary-color);
+        }
+
+        .action-link:hover {
+            transform: translateY(-2px);
+            background-color: #004d99;
+            box-shadow: 0 16px 30px rgba(0, 77, 153, 0.15);
+        }
+
+        .action-button {
+            color: var(--primary-color);
+            background-color: transparent;
+            border-color: var(--border-color);
+        }
+
+        .action-button:hover {
+            transform: translateY(-2px);
+            border-color: rgba(0, 51, 102, 0.22);
+            box-shadow: 0 12px 24px rgba(0, 51, 102, 0.08);
+        }
+
+        .bottom-note {
+            margin-top: 32px;
+            color: var(--muted-color);
+            font-size: 0.92rem;
+        }
+
+        @media (max-width: 600px) {
+            .page-wrapper {
+                padding: 24px;
+            }
+            .actions {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main class="page-wrapper" role="main">
+        <p class="status-code">404</p>
+        <h1 class="headline">Page Not Found</h1>
+        <p class="description">
+            The page you are looking for might have been removed, renamed, or is temporarily unavailable.<br>
+            Please check the link or return to the homepage to continue browsing the AIS official website.
+        </p>
+
+        <div class="actions">
+            <a href="/ais-web/index.php" class="action-link">Return to Homepage</a>
+            <a href="/ais-web/contact.php" class="action-button">Contact Us</a>
+            <a href="https://www.instagram.com/aiskeiosfc" target="_blank" rel="noreferrer" class="action-button">Official Instagram</a>
+        </div>
+
+        <p class="bottom-note">
+            If you believe this is our mistake, please contact us via our official email or Instagram.
+        </p>
+    </main>
+</body>
+</html>
