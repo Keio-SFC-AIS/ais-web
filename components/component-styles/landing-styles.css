@@ -43,12 +43,15 @@
     margin-left: 5%;
     color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-    animation: fadeUp 0.5s ease-in-out;
+    opacity: 0;
+    animation: fadeUp 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.1s both;
 }
 
 .header-text h1 {
     font-size: 110px;
     line-height: 1;
+    opacity: 0;
+    animation: fadeUpSplit 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.15s both;
 }
 
 .header-text p {
@@ -56,6 +59,8 @@
     font-size: 22px;
     line-height: 1.35;
     max-width: 720px;
+    opacity: 0;
+    animation: fadeUpSplit 0.95s cubic-bezier(0.22, 1, 0.36, 1) 0.22s both;
 }
 
 .header-text a {
@@ -68,42 +73,38 @@
     padding: 14px 30px;
     text-shadow: none;
     text-decoration: none;
-    transition: background-color 0.5s ease, color 0.5s ease;
+    transition: background-color 0.5s ease, color 0.5s ease, transform 0.35s ease;
+    opacity: 0;
+    animation: fadeUpSplit 1.05s cubic-bezier(0.22, 1, 0.36, 1) 0.32s both;
 }
 
 .header-text a:hover {
     background-color: rgb(234, 234, 234);
     color: black;
+    transform: translateY(-1px);
 }
 
 @keyframes fadeUp {
     from {
         opacity: 0;
-        transform: translateY(-45%);
+        transform: translateY(28px) scale(0.98);
     }
 
     to {
         opacity: 1;
-        transform: translateY(0);
+        transform: translateY(0) scale(1);
     }
 }
 
-@media (max-width: 900px) {
-    .header-text {
-        padding: 40px 5%;
-        width: 90%;
+@keyframes fadeUpSplit {
+    from {
+        opacity: 0;
+        transform: translateY(24px) scale(0.99);
     }
 
-    .header-text h1 {
-        font-size: 80px;
-    }
-
-    .header-text p {
-        font-size: 20px;
-    }
-
-    .header-text a {
-        padding: 12px 28px;
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
     }
 }
 

@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="components/component-styles/joinus-styles.css">
     <link rel="stylesheet" href="components/component-styles/organization-chart-style.css">
     <link rel="stylesheet" href="components/component-styles/about-us-styles.css">
+    <link rel="stylesheet" href="components/component-styles/contact-us-styles.css">
     <link rel="icon" href="img-resources/AIS-logo.png" type="image/png">
     <script src="script.js" defer></script>
 </head>
