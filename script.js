@@ -146,12 +146,16 @@ if (navToggle && navBar) {
             const scripts = Array.from(container.querySelectorAll('script'));
             scripts.forEach(oldScript => {
                 const newScript = document.createElement('script');
+                Array.from(oldScript.attributes).forEach(attr => {
+                    newScript.setAttribute(attr.name, attr.value);
+                });
+
                 if (oldScript.src) {
-                    newScript.src = oldScript.src;
                     newScript.async = false;
                 } else {
                     newScript.textContent = oldScript.textContent;
                 }
+
                 oldScript.parentNode.replaceChild(newScript, oldScript);
             });
         }
