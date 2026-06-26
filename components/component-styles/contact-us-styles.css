@@ -242,6 +242,49 @@
     cursor: pointer;
 }
 
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #020617;
+        color: #e2e8f0;
+    }
+
+    .contact-page-heading h1,
+    .contact-section-header h2 {
+        color: #ffffff;
+    }
+
+    .contact-intro p,
+    .contact-section-header p,
+    .contact-help-card p,
+    .contact-help-card ul,
+    .ai-note {
+        color: #cbd5e1;
+    }
+
+    .contact-card,
+    .contact-help-card,
+    .ai-info {
+        background: #111827;
+        border-color: rgba(148, 163, 184, 0.22);
+        box-shadow: 0 8px 24px rgba(2, 6, 23, 0.35);
+    }
+
+    .contact-card h2,
+    .contact-help-card h3 {
+        color: #f8fafc;
+    }
+
+    .contact-link-text {
+        color: #7dd3fc;
+    }
+
+    .contact-card-link:hover,
+    .contact-card-link:focus-visible {
+        border-color: rgba(125, 211, 252, 0.35);
+        box-shadow: 0 16px 32px rgba(2, 6, 23, 0.42);
+    }
+}
+
 @media (max-width: 600px) {
     .contact-intro h1 {
         font-size: 1.4rem;

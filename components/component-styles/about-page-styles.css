@@ -88,6 +88,64 @@
     transform: translateY(-2px);
 }
 
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #020617;
+        color: #e2e8f0;
+    }
+
+    .about-hero {
+        background-color: transparent;
+    }
+
+    .about-hero h1,
+    .section-header h1,
+    .hero-card h2,
+    .contact-page-heading h1 {
+        color: #ffffff!important;
+    }
+
+    .about-hero p,
+    .section-header h3,
+    .section-header p,
+    .hero-card p,
+    .contact-intro p {
+        color: #cbd5e1;
+    }
+
+    .hero-card {
+        background: #111827;
+        border-color: rgba(148, 163, 184, 0.22);
+        box-shadow: 0 18px 40px rgba(2, 6, 23, 0.38);
+    }
+
+    .hero-card:hover {
+        box-shadow: 0 20px 50px rgba(2, 6, 23, 0.5);
+    }
+
+    .about-hero .hero-actions a {
+        background-color: rgba(255, 255, 255, 0.05);
+    }
+
+    .about-hero .primary-btn {
+        background-color: #2563eb;
+        color: #ffffff;
+    }
+
+    .about-hero .primary-btn:hover {
+        background-color: #1d4ed8;
+    }
+
+    .about-hero .secondary-btn {
+        border-color: rgba(125, 211, 252, 0.28);
+        color: #7dd3fc;
+        background-color: rgba(34, 211, 238, 0.06);
+    }
+
+    .about-hero .secondary-btn:hover {
+        background-color: rgba(125, 211, 252, 0.12);
+    }
+}
 @media (max-width: 900px) {
     .about-hero {
         padding: 48px 18px 32px;

@@ -117,9 +117,19 @@ if (navToggle && navBar) {
     (function () {
         const mainSelector = 'main';
 
-        function isInternalLink(anchor) {
+        function shouldUsePJAX(anchor) {
             try {
                 const url = new URL(anchor.href, location.origin);
+                const pathname = url.pathname;
+
+                if (anchor.hasAttribute('data-pjax') && anchor.getAttribute('data-pjax') === 'false') {
+                    return false;
+                }
+
+                if (pathname === '/hub' || pathname === '/hub/' || pathname.startsWith('/hub/')) {
+                    return false;
+                }
+
                 return url.origin === location.origin;
             } catch (e) {
                 return false;
@@ -197,8 +207,7 @@ if (navToggle && navBar) {
             const a = e.target.closest('a');
             if (!a) return;
             if (a.target === '_blank' || a.hasAttribute('download') || a.getAttribute('href')?.startsWith('#')) return;
-            if (!isInternalLink(a)) return;
-            // Prevent PJAX for asset links
+            if (!shouldUsePJAX(a)) return;
             const href = a.href;
             e.preventDefault();
             navigateTo(href, true);
