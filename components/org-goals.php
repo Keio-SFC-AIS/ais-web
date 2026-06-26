@@ -1,34 +1,33 @@
 <section id="organization-goals" class="organization-goals page-section">
     <div class="goals-header-text">
-        <h1>
-            Our <span id="ais-text">Goal</span>
-        </h1>
-        <p>"Bridging the gap between GIGA & Non-GIGA students through <span><b>A.I.S</b></span>"</p>
+        <p class="eyebrow">Our Mission</p>
+        <h1>Our Goal</h1>
+        <p>Bridging the gap between GIGA and non-GIGA students through <strong>A.I.S.</strong></p>
     </div>
 
-
     <div class="main-goals">
-        <div class="goal">
-                <div class="acronym">
-                <h2>A.</h2>
-                <img src="img-resources/interaction.jpg" alt="student interaction">
+        <article class="goal">
+            <span class="goal-symbol">A</span>
+            <div class="goal-copy">
+                <h2>Advocating</h2>
+                <p>student engagement and connection.</p>
             </div>
-            
-            <p>Advocating student engagement and connection.</p>
-        </div>
-        <div class="goal">
-            <div class="acronym">
-                <h2>I.</h2>
-                <img src="img-resources/international.jpg" alt="student interaction">
+        </article>
+
+        <article class="goal">
+            <span class="goal-symbol">I</span>
+            <div class="goal-copy">
+                <h2>Integrating</h2>
+                <p>international students into a broader community.</p>
             </div>
-            <p>Integrating international students into a broader community.</p>
-        </div>
-        <div class="goal">
-                <div class="acronym">
-                <h2>S.</h2>
-                <img src="img-resources/collaboration.jpg" alt="student interaction">
+        </article>
+
+        <article class="goal">
+            <span class="goal-symbol">S</span>
+            <div class="goal-copy">
+                <h2>Supporting</h2>
+                <p>student voices and shared experiences.</p>
             </div>
-            <p>Supporting student voices and shared experiences</p>
-        </div>
+        </article>
     </div>
 </section>

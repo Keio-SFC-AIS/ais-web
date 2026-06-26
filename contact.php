@@ -94,24 +94,24 @@ require_once __DIR__ . '/components/nav-bar.php';
             </div>
         </div> -->
 
+        <!--
+        Paste this script at the bottom of your HTML before the </body> tag.
+        See more style and config options on our docs
+        https://github.com/Mintplex-Labs/anythingllm-embed/blob/main/README.md
+        -->
+        <script
+          data-embed-id="10924585-6918-4243-af21-9a46cdf25d58"
+          data-base-api-url="https://anythingllm.tianyibrad.com/api/embed"
+          data-greeting="Welcome to AIS Website Assistant! How can I help you today?"
+          data-brand-image-url="https://ais-official.sfc.keio.ac.jp/logo.png"
+          data-no-sponsor="true"
+          data-assistant-name="AIS AI Assistant"
+          data-assistant-icon="https://ais-official.sfc.keio.ac.jp/logo.png"
+          src="https://anythingllm.tianyibrad.com/embed/anythingllm-chat-widget.min.js">
+        </script>
+        <!-- AnythingLLM (https://anythingllm.com) -->
+
     </section>
 </main>
-
-<!--
-Paste this script at the bottom of your HTML before the </body> tag.
-See more style and config options on our docs
-https://github.com/Mintplex-Labs/anythingllm-embed/blob/main/README.md
--->
-<script
-  data-embed-id="10924585-6918-4243-af21-9a46cdf25d58"
-  data-base-api-url="https://anythingllm.tianyibrad.com/api/embed"
-  data-greeting="Welcome to AIS Website Assistant! How can I help you today?"
-  data-brand-image-url="https://ais-official.sfc.keio.ac.jp/logo.png"
-  data-no-sponsor="true"
-  data-assistant-name="AIS AI Assistant"
-  data-assistant-icon="https://ais-official.sfc.keio.ac.jp/logo.png"
-  src="https://anythingllm.tianyibrad.com/embed/anythingllm-chat-widget.min.js">
-</script>
-<!-- AnythingLLM (https://anythingllm.com) -->
 
 <?php require_once __DIR__ . '/includes/footer.php'; ?>
