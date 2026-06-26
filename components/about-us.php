@@ -1,5 +1,5 @@
 <section id="what-we-do" class="what-we-do page-section">
-    <div class="section-header-text">
+    <div class="section-header">
         <h1>What We Do</h1>
         <p>Providing essential resources and building a vibrant community at Keio SFC.</p>
     </div>

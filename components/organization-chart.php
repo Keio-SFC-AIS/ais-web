@@ -1,5 +1,5 @@
 <section class="organization-chart page-section">
-    <div class="org-chart-header-text">
+    <div class="section-header">
         <h1>Our Structure</h1>
         <h3>How our organization is structured</h3>
     </div>

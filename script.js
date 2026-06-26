@@ -112,3 +112,108 @@ if (navToggle && navBar) {
         }
     });
 }
+
+    /* PJAX-like nav */
+    (function () {
+        const mainSelector = 'main';
+
+        function isInternalLink(anchor) {
+            try {
+                const url = new URL(anchor.href, location.origin);
+                return url.origin === location.origin;
+            } catch (e) {
+                return false;
+            }
+        }
+
+        async function fetchFragment(url) {
+            const res = await fetch(url, { headers: { 'X-PJAX': 'true' } });
+            if (!res.ok) throw new Error('Network response was not ok');
+            const text = await res.text();
+            return text;
+        }
+
+        function parseHTML(html) {
+            const parser = new DOMParser();
+            return parser.parseFromString(html, 'text/html');
+        }
+
+        function extractMain(doc) {
+            return doc.querySelector(mainSelector);
+        }
+
+        function executeScripts(container) {
+            const scripts = Array.from(container.querySelectorAll('script'));
+            scripts.forEach(oldScript => {
+                const newScript = document.createElement('script');
+                if (oldScript.src) {
+                    newScript.src = oldScript.src;
+                    newScript.async = false;
+                } else {
+                    newScript.textContent = oldScript.textContent;
+                }
+                oldScript.parentNode.replaceChild(newScript, oldScript);
+            });
+        }
+
+        async function navigateTo(href, addToHistory = true) {
+            try {
+                const html = await fetchFragment(href);
+                const doc = parseHTML(html);
+                const newMain = extractMain(doc);
+                if (!newMain) {
+                    location.href = href; // fallback to full load if main not found
+                    return;
+                }
+
+                const currentMain = document.querySelector(mainSelector);
+                if (currentMain) {
+                    currentMain.replaceWith(newMain);
+                } else {
+                    document.body.appendChild(newMain);
+                }
+
+                // update title
+                const newTitle = doc.querySelector('title');
+                if (newTitle) document.title = newTitle.textContent;
+
+                // run scripts inside the new main
+                executeScripts(newMain);
+
+                if (addToHistory) history.pushState({ url: href }, '', href);
+                if (window.onPJAXLoad && typeof window.onPJAXLoad === 'function') window.onPJAXLoad();
+            } catch (err) {
+                console.error('PJAX navigation failed:', err);
+                location.href = href; // fallback
+            }
+        }
+
+        // Delegate clicks on links
+        document.addEventListener('click', (e) => {
+            const a = e.target.closest('a');
+            if (!a) return;
+            if (a.target === '_blank' || a.hasAttribute('download') || a.getAttribute('href')?.startsWith('#')) return;
+            if (!isInternalLink(a)) return;
+            // Prevent PJAX for asset links
+            const href = a.href;
+            e.preventDefault();
+            navigateTo(href, true);
+        });
+
+        // Handle popstate
+        window.addEventListener('popstate', (e) => {
+            const url = (e.state && e.state.url) || location.href;
+            navigateTo(url, false);
+        });
+
+        // Provide a hook for re-initialization after PJAX content load
+        window.onPJAXLoad = function () {
+            // Init
+            const navBar = document.querySelector('.nav-bar');
+            const navToggle = document.querySelector('.nav-toggle');
+            if (navToggle && navBar) {
+                navToggle.setAttribute('aria-expanded', navBar.classList.contains('nav-open') ? 'true' : 'false');
+            }
+        };
+
+    })();
