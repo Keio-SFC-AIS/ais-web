@@ -28,7 +28,8 @@
                         </div>
                         <ul>
                             <li>
-                                <div class="organization-block"  style="--theme-color: #2772ff;">
+                                <div class="organization-block events-team"  style="--theme-color: #2772ff;">
+                                    <a href="https://ais-official.sfc.keio.ac.jp/hub/?p=530" class="stretched-link"></a>
                                     <div  id="coloring">
                                         <div class="icon"></div> 
                                     </div>
@@ -39,7 +40,8 @@
                                 </div>
                             </li> 
                             <li>
-                                <div class="organization-block" style="--theme-color: #ff5757;">
+                                <div class="organization-block sns-team" style="--theme-color: #ff5757;">  
+                                    <a href="https://ais-official.sfc.keio.ac.jp/hub/?p=516" class="stretched-link"></a>
                                     <div  id="coloring">
                                         <div class="icon"></div> 
                                     </div>
@@ -50,7 +52,8 @@
                                 </div>
                             </li>
                             <li>
-                                <div class="organization-block" style="--theme-color: #cb6ce6;">
+                                <div class="organization-block web-team" style="--theme-color: #cb6ce6;">
+                                    <a href="https://ais-official.sfc.keio.ac.jp/hub/?p=502" class="stretched-link"></a>
                                     <div  id="coloring">
                                         <div class="icon"></div> 
                                     </div>
