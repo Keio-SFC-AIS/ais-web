@@ -103,10 +103,10 @@ require_once __DIR__ . '/components/nav-bar.php';
           data-embed-id="10924585-6918-4243-af21-9a46cdf25d58"
           data-base-api-url="https://anythingllm.tianyibrad.com/api/embed"
           data-greeting="Welcome to AIS Website Assistant! How can I help you today?"
-          data-brand-image-url="https://ais-official.sfc.keio.ac.jp/logo.png"
+          data-brand-image-url="https://ais-official.sfc.keio.ac.jp/img-resources/AIS-logo.png"
           data-no-sponsor="true"
           data-assistant-name="AIS AI Assistant"
-          data-assistant-icon="https://ais-official.sfc.keio.ac.jp/logo.png"
+          data-assistant-icon="https://ais-official.sfc.keio.ac.jp/img-resources/AIS-logo.png"
           src="https://anythingllm.tianyibrad.com/embed/anythingllm-chat-widget.min.js">
         </script>
         <!-- AnythingLLM (https://anythingllm.com) -->
