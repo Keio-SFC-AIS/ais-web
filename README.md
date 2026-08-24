@@ -53,3 +53,15 @@ If you have PHP installed, spin up  a quick local server by:
 ```bash
 php -S localhost:8000
 ```
+
+## Portal administration
+
+The public portal is rendered from a local SQLite database at `portal/data/portal.sqlite`. The database is ignored by Git, so a deployment pull does not replace cards created by admins.
+
+Before using `/portal/admin/`, copy `portal/admin/config.example.php` to `portal/admin/config.local.php` on the server and set `password_hash` to a hash made with:
+
+```bash
+php -r "echo password_hash('choose-a-strong-password', PASSWORD_DEFAULT), PHP_EOL;"
+```
+
+The first request to `/portal/` creates and seeds the database with the current cards. Ensure that the Apache/PHP user can write to `portal/data/`, and that PHP has the `pdo_sqlite` extension enabled. The `.htaccess` file in that directory blocks direct database downloads on Apache.
