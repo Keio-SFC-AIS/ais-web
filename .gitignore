@@ -1,3 +1,6 @@
 portal/data/*
 !portal/data/.htaccess
 portal/admin/config.local.php
+hub/*
+*auto_pull*
+
